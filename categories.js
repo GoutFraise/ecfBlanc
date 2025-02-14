@@ -32,7 +32,7 @@ fetch('https://www.themealdb.com/api/json/v1/1/categories.php')
             return response.json();
         })
         .then(data => {
-            parametre=(window.location.search)
+             let parametre=(window.location.search)
             for(let i=0;i<data.categories.length;i++){
                 if(parametre.includes(data.categories[i].strCategory)){
                     const article = document.createElement("article")

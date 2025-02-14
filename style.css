@@ -69,12 +69,34 @@ footer{
 #ListePlat{
     display: flex;
     flex-wrap: wrap;
-    width: 20vw;
+    gap: 20px;
+}
+#ListePlat>article{
+    width: 18%;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden; 
+    transform: scale(1.0);
+    transition: all ease 0.5s;   
+}
+#ListePlat>article:hover{
+    transform: scale(1.1);
+    transition: all ease 0.5s;
+
 }
 #ListePlat>article>img{ 
     width: 100%;
     
-
+} 
+#ListePlat>article>h3{ 
+    font-size: 16px;
+    display: inline;
+    position: absolute;
+    background-color: brown;
+    color: blanchedalmond;
+    width: 100%;
+    padding: 20px;
+    bottom: 0; 
 } 
 
 @media (min-width: 1200px) and  (max-width:1480px){
