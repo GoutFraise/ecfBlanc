@@ -1,8 +1,7 @@
 
-const listcate = document.querySelector("#categories")
-
-const listPlat = document.querySelector("#ListePlat")
-const nomCategorie = document.querySelector("#NomCategorie")
+const listcate = document.querySelector("#categories");
+const listPlat = document.querySelector("#ListePlat");
+const nomCategorie = document.querySelector("#NomCategorie");
 
 function categorielist(){
     fetch('https://www.themealdb.com/api/json/v1/1/categories.php')
@@ -32,12 +31,9 @@ fetch('https://www.themealdb.com/api/json/v1/1/categories.php')
             return response.json();
         })
         .then(data => {
-             let parametre=(window.location.search)
+             let parametre=(window.location.search);
             for(let i=0;i<data.categories.length;i++){
                 if(parametre.includes(data.categories[i].strCategory)){
-                    const article = document.createElement("article")
-                    const h3 = document.createElement("h3")
-                    const img = document.createElement("img")
                     fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${data.categories[i].strCategory}`)
                         .then(response => {
                             if (!response.ok) {
@@ -47,14 +43,14 @@ fetch('https://www.themealdb.com/api/json/v1/1/categories.php')
                         })
                         .then(vignette => {
                             for(let j=0;j<vignette.meals.length;j++){
-                                const article = document.createElement("article")
-                                const h3 = document.createElement("h3")
-                                const img = document.createElement("img")
+                                const article = document.createElement("article");
+                                const h3 = document.createElement("h3");
+                                const img = document.createElement("img");
                                 h3.textContent=vignette.meals[j].strMeal;
-                                img.setAttribute("src", vignette.meals[j].strMealThumb)
-                                article.appendChild(h3)
-                                article.appendChild(img)
-                                listPlat.appendChild(article)
+                                img.setAttribute("src", vignette.meals[j].strMealThumb);
+                                article.appendChild(h3);
+                                article.appendChild(img);
+                                listPlat.appendChild(article);
                             }
                         })
                         .catch(error => {

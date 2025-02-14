@@ -4,7 +4,6 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
     color: blanchedalmond;
-    
 }
 body{
     background-color: rgb(203, 83, 9);
@@ -12,11 +11,13 @@ body{
     flex-direction: column;
     justify-content: space-between;
     min-height: 100vh;
-
 }
 .container{
     width: 1440px;
     margin: 0 auto;
+}
+input{
+    color:black;
 }
 /*header*/
 header{
@@ -24,7 +25,6 @@ header{
     justify-content: flex-start;
     align-items: center;
     gap: 0vh;
-    
     background-color: brown;
     padding: 20px;
 }
@@ -37,7 +37,6 @@ button{
     background-color: brown;
     margin: 20px;
     padding: 5px;
-
 }
 h2{
     text-align: center;
@@ -53,7 +52,6 @@ footer{
     display: flex;
     padding: 20px;
     justify-content: space-around;
-
     background-color: brown;
 }
 /*categories*/
@@ -82,7 +80,6 @@ footer{
 #ListePlat>article:hover{
     transform: scale(1.1);
     transition: all ease 0.5s;
-
 }
 #ListePlat>article>img{ 
     width: 100%;
@@ -98,7 +95,6 @@ footer{
     padding: 20px;
     bottom: 0; 
 } 
-
 @media (min-width: 1200px) and  (max-width:1480px){
     .container{
         width: 1140px;
