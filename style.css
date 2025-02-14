@@ -56,6 +56,27 @@ footer{
 
     background-color: brown;
 }
+/*categories*/
+#categories{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+    background-color: brown;
+    padding: 20px;
+}
+/*categorie(ListePlat) */
+#ListePlat{
+    display: flex;
+    flex-wrap: wrap;
+    width: 20vw;
+}
+#ListePlat>article>img{ 
+    width: 100%;
+    
+
+} 
+
 @media (min-width: 1200px) and  (max-width:1480px){
     .container{
         width: 1140px;
