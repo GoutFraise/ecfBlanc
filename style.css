@@ -1,0 +1,83 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    color: blanchedalmond;
+    
+}
+body{
+    background-color: rgb(203, 83, 9);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+
+}
+.container{
+    width: 1440px;
+    margin: 0 auto;
+}
+/*header*/
+header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0vh;
+    
+    background-color: brown;
+    padding: 20px;
+}
+header>i{
+    font-size: 30px;
+    margin-right: 10px;
+}
+/*main*/
+button{
+    background-color: brown;
+    margin: 20px;
+    padding: 5px;
+
+}
+h2{
+    text-align: center;
+    font-size: 25px;
+    margin: 20px;
+}
+#recette>p{
+    padding: 20px;
+
+}
+/*footer*/
+footer{
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+
+    background-color: brown;
+}
+@media (min-width: 1200px) and  (max-width:1480px){
+    .container{
+        width: 1140px;
+    }
+}
+@media (min-width: 992px) and  (max-width:1199px){
+    .container{
+        width: 920px;
+    }
+}
+@media (min-width: 768px) and  (max-width:991px){
+    .container{
+        width: 750px; 
+    }
+}
+@media (min-width: 512px) and  (max-width:767px){
+    .container{
+        width: 500px;
+    }
+}
+@media (min-width: 0px) and  (max-width:511px){
+    .container{
+        width: 100%;
+    }
+}
