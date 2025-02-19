@@ -1,8 +1,4 @@
-
 const listcate = document.querySelector("#categories");
-
-const nomCategorie = document.querySelector("#NomCategorie");
-
 function categorielist(){
     fetch('https://www.themealdb.com/api/json/v1/1/categories.php')
         .then(response => {
@@ -15,7 +11,7 @@ function categorielist(){
             
             for(let i=0;i<data.categories.length;i++){
                 const article=document.createElement('article');
-                const titre=document.createElement('h2');
+                const titre=document.createElement('h3');
                 const img=document.createElement('img');
                 titre.textContent=data.categories[i].strCategory;
                 img.setAttribute("src", data.categories[i].strCategoryThumb);

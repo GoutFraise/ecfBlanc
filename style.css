@@ -17,6 +17,9 @@ body{
 input{
     color:black;
 }
+img{ 
+    width: 100%;
+} 
 /*header*/
 header{
     display: flex;
@@ -25,7 +28,6 @@ header{
     gap: 0vh;
     background-color: brown;
     padding: 20px;
-    
 }
 header>i{
     font-size: 30px;
@@ -46,23 +48,12 @@ nav>a{
 }
 nav>a:hover{
     background-color: rgb(134, 35, 35);
-   
-
 }
 /*main*/
-button{
-    background-color: brown;
-    margin: 20px;
-    padding: 5px;
-}
 h2{
     text-align: center;
     font-size: 25px;
     margin: 20px;
-}
-#recette>p{
-    padding: 20px;
-
 }
 /*footer*/
 footer{
@@ -77,13 +68,14 @@ footer{
 /*categories*/
 #categories{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
     padding: 20px;
     padding-bottom: 10vh;
 }
 #categories>article{
+    width: 23%;
     background-color: brown;
     position: relative;
     border-radius: 20px;
@@ -92,14 +84,21 @@ footer{
     transition: all ease 0.5s; 
 }
 #categories>article:hover{
+    background-color: rgb(134, 35, 35);
     transform: scale(1.1);
     transition: all ease 0.5s;
+}
+#categories>article>h3{
+    text-align: center;
+    font-size: 20px;
+    margin: 20px;
 }
 /*categorie(ListePlat) */
 #ListePlat{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    padding-bottom: 10vh;
 }
 #ListePlat>article{
     width: 18%;
@@ -110,13 +109,11 @@ footer{
     transition: all ease 0.5s;   
 }
 #ListePlat>article:hover{
+    background-color: rgb(134, 35, 35);
     transform: scale(1.1);
     transition: all ease 0.5s;
 }
-#ListePlat>article>img{ 
-    width: 100%;
-    
-} 
+
 #ListePlat>article>h3{ 
     font-size: 16px;
     display: inline;
@@ -125,17 +122,186 @@ footer{
     color: blanchedalmond;
     width: 100%;
     padding: 20px;
-    bottom: 0; 
+    top: 0; 
 } 
 /*first letter*/
+#navletter{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4vh;
+    
+}
+#navletter>span{
+    width: 3.8%;
+    height: 100%;
+    padding: 18px;
+    text-align: center;
+    transform: scale(1.0);
+    transition: all ease 0.5s;
+
+}
+#navletter>span:hover{
+    background-color: rgb(134, 35, 35);
+    transform: scale(1.1);
+    transition: all ease 0.5s;
+
+}
+#first-letter{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 10vh;
+
+}
+#first-letter>article{
+    width: 18%;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden; 
+    transform: scale(1.0);
+    transition: all ease 0.5s;  
+}
+#first-letter>article:hover{
+    background-color: rgb(134, 35, 35);
+    transform: scale(1.1);
+    transition: all ease 0.5s;
+}
+#first-letter>article>h3{
+    font-size: 16px;
+    display: inline;
+    position: absolute;
+    background-color: brown;
+    color: blanchedalmond;
+    width: 100%;
+    padding: 20px;
+    top: 0; 
+}
+/*search*/
+#larecherche{
+    background-color: brown;
+    display: flex;
+    padding: 2vh;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 4vh;
+}
+
+
+
+#listeRecherche{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 10vh;
+
+}
+#listeRecherche>article{
+    width: 18%;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden; 
+    transform: scale(1.0);
+    transition: all ease 0.5s;   
+}
+#listeRecherche>article:hover{
+    background-color: rgb(134, 35, 35);
+    transform: scale(1.1);
+    transition: all ease 0.5s;
+}
+#listeRecherche>article>h3{
+    font-size: 16px;
+    display: inline;
+    position: absolute;
+    background-color: brown;
+    color: blanchedalmond;
+    width: 100%;
+    padding: 20px;
+    top: 0; 
+}
+/*plat aleatoire*/
+#divbouton{
+    display: flex;
+    justify-content: center;
+}
+#PlatAleatoire{
+    background-color: brown;
+    margin: 20px;
+    padding: 5px;
+}
+#sectionRandom{
+    padding-bottom: 10vh;
+}
+#recetteAleatoire{
+    background-color: brown;
+    display: none;
+    padding: 4vh;
+    gap: 4vh;
+    grid-template-areas: "a a a" "e b c" "e d d" ;
+    border-radius: 20px;
+}
+#recetteAleatoire>h2{
+    grid-area: a ;
+    margin: 0;
+}
+#recetteAleatoire>c{
+    grid-area: b ;
+    
+}
+#recetteAleatoire>#region{
+    grid-area: c ;
+
+}
+#recetteAleatoire>p{
+    font-size: 14px;
+    grid-area: d ;
+    
+}
+#recetteAleatoire>img{
+    grid-area: e ;
+}
+/*meal*/
+#recette>article{
+    background-color: brown;
+    display: grid;
+    padding: 4vh;
+    gap: 4vh;
+    grid-template-areas: "a a a" "e b c" "e d d" ;
+    border-radius: 20px;
+    margin: 10vh 0;
+}
+#recette>article>h2{
+    grid-area: a ;
+    margin: 0;
+}
+#recette>article>#categorie{
+    grid-area: b ;
+    
+}
+#recette>article>#region{
+    grid-area: c ;
+
+}
+#recette>article>p{
+    font-size: 14px;
+    grid-area: d ;
+}
+#recette>article>img{
+    grid-area: e ;
+}
+
 @media (min-width: 1200px) and  (max-width:1480px){
     .container{
         width: 1140px;
     }
+    
 }
 @media (min-width: 992px) and  (max-width:1199px){
     .container{
         width: 920px;
+    }
+    #categories>article{
+        width: 31%;
     }
 }
 @media (min-width: 768px) and  (max-width:991px){
@@ -147,9 +313,15 @@ footer{
     .container{
         width: 500px;
     }
+    #categories>article{
+        width: 47%;
+    }
 }
 @media (min-width: 0px) and  (max-width:511px){
     .container{
+        width: 100%;
+    }
+    #categories>article{
         width: 100%;
     }
 }

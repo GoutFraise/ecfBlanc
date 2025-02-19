@@ -7,7 +7,6 @@ fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php${parametre}`)
             return response.json();
         })
         .then(data => {
-            console.log(data)
             if(data.meals[0].strMealThumb!=null){
                 const article=document.createElement('article');
                 const titre=document.createElement('h2');
