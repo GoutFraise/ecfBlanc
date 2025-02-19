@@ -1,6 +1,5 @@
 const listPlat = document.querySelector("#ListePlat");
 const nomCategorie = document.querySelector("#NomCategorie");
-
 fetch('https://www.themealdb.com/api/json/v1/1/categories.php')
         .then(response => {
             if (!response.ok) {
@@ -20,7 +19,6 @@ fetch('https://www.themealdb.com/api/json/v1/1/categories.php')
                             return response.json();
                         })
                         .then(vignette => {
-                            console.log(parametre)
                             nomCategorie.textContent=parametre.slice(3)
                             for(let j=0;j<vignette.meals.length;j++){
                                 const article = document.createElement("article");

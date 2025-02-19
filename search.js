@@ -15,11 +15,8 @@ recherche.addEventListener("click",()=>{
                 return response.json();
             })
             .then(data => {
-                
-                console.log(data);
                 champrecherche.value=""
                 for(let i=0;i<data.meals.length;i++){
-                    console.log(data.meals[i].strMealThumb)
                     if(data.meals[i].strMealThumb!=null){
                         const article=document.createElement('article');
                         const titre=document.createElement('h3');

@@ -16,7 +16,6 @@ for(let i =0;i <26;i++){
             })
             .then(data => {
                 for(let j=0;j<data.meals.length;j++){
-                    console.log(data.meals[j].strMealThumb)
                     if(data.meals[j].strMealThumb!=null){
                         const article = document.createElement("article");
                         const h3 = document.createElement("h3");

@@ -13,7 +13,6 @@ boutonPlat.addEventListener('click',async()=>{
         })
         .then(data => {
             if(data.meals[0].strMealThumb!=null){
-                
                 const titre=document.createElement('h2');
                 const region=document.createElement('span');
                 const categorie=document.createElement('span');
@@ -21,6 +20,8 @@ boutonPlat.addEventListener('click',async()=>{
                 const img=document.createElement('img');
                 titre.textContent=data.meals[0].strMeal;
                 region.textContent="Region : "+data.meals[0].strArea;
+                region.setAttribute("id","regionRandom")
+                categorie.setAttribute("id","categorieRandom")
                 categorie.textContent="Categorie : " +data.meals[0].strCategory;
                 preparation.textContent=data.meals[0].strInstructions;
                 img.setAttribute("src", data.meals[0].strMealThumb);
@@ -29,7 +30,6 @@ boutonPlat.addEventListener('click',async()=>{
                 recette.appendChild(categorie);
                 recette.appendChild(preparation);
                 recette.appendChild(img);
-              
             }
         })
         .catch(error => {

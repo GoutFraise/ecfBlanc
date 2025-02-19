@@ -8,7 +8,6 @@ function categorielist(){
             return response.json();
         })
         .then(data => {
-            
             for(let i=0;i<data.categories.length;i++){
                 const article=document.createElement('article');
                 const titre=document.createElement('h3');
@@ -17,15 +16,11 @@ function categorielist(){
                 img.setAttribute("src", data.categories[i].strCategoryThumb);
                 article.appendChild(titre);
                 article.appendChild(img);
-                console.log(data.categories[i].strCategory)
                 article.addEventListener("click", ()=>{
-                    
                     window.location.replace(`./categorie.html?c=${data.categories[i].strCategory}`)
-
                 })
-                listcate.appendChild(article);
-                
-            }/*strCategoryThumb*/
+                listcate.appendChild(article); 
+            }
         })
         .catch(error => {
             console.error('Error:', error);

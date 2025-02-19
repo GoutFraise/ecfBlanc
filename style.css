@@ -97,6 +97,7 @@ footer{
 #ListePlat{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
     padding-bottom: 10vh;
 }
@@ -128,8 +129,8 @@ footer{
 #navletter{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin-bottom: 4vh;
-    
 }
 #navletter>span{
     width: 3.8%;
@@ -138,7 +139,6 @@ footer{
     text-align: center;
     transform: scale(1.0);
     transition: all ease 0.5s;
-
 }
 #navletter>span:hover{
     background-color: rgb(134, 35, 35);
@@ -148,6 +148,7 @@ footer{
 }
 #first-letter{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
     padding-bottom: 10vh;
@@ -186,10 +187,8 @@ footer{
     gap: 40px;
     margin-bottom: 4vh;
 }
-
-
-
 #listeRecherche{
+    justify-content: center;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -244,12 +243,18 @@ footer{
     grid-area: a ;
     margin: 0;
 }
-#recetteAleatoire>c{
+#recetteAleatoire>#regionRandom{
     grid-area: b ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
-#recetteAleatoire>#region{
+#recetteAleatoire>#categorieRandom{
     grid-area: c ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 #recetteAleatoire>p{
@@ -261,6 +266,9 @@ footer{
     grid-area: e ;
 }
 /*meal*/
+#recette{
+    padding-bottom: 10vh;
+}
 #recette>article{
     background-color: brown;
     display: grid;
@@ -269,6 +277,7 @@ footer{
     grid-template-areas: "a a a" "e b c" "e d d" ;
     border-radius: 20px;
     margin: 10vh 0;
+    
 }
 #recette>article>h2{
     grid-area: a ;
@@ -276,10 +285,16 @@ footer{
 }
 #recette>article>#categorie{
     grid-area: b ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 #recette>article>#region{
     grid-area: c ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 #recette>article>p{
@@ -294,34 +309,51 @@ footer{
     .container{
         width: 1140px;
     }
-    
+    #categories>article,#ListePlat>article,#first-letter>article,#listeRecherche>article{
+        width: 23%;
+    }
 }
 @media (min-width: 992px) and  (max-width:1199px){
     .container{
         width: 920px;
     }
-    #categories>article{
+    #categories>article,#ListePlat>article,#first-letter>article,#listeRecherche>article{
         width: 31%;
+    }
+    #recetteAleatoire,#recette>article{
+        grid-template-areas: "a a a" "e b b" "e c c" "d d d" ;
     }
 }
 @media (min-width: 768px) and  (max-width:991px){
     .container{
         width: 750px; 
     }
+    #categories>article,#ListePlat>article,#first-letter>article,#listeRecherche>article{
+        width: 31%;
+    }
+    #recetteAleatoire,#recette>article{
+        grid-template-areas: "a a a" "e b b" "e c c" "d d d" ;
+    }
 }
 @media (min-width: 512px) and  (max-width:767px){
     .container{
         width: 500px;
     }
-    #categories>article{
+    #categories>article,#ListePlat>article,#first-letter>article,#listeRecherche>article{
         width: 47%;
+    }
+    #recetteAleatoire,#recette>article{
+        grid-template-areas: "a a" "e e" "b c" "d d" ;
     }
 }
 @media (min-width: 0px) and  (max-width:511px){
     .container{
         width: 100%;
     }
-    #categories>article{
+    #categories>article,#ListePlat>article,#first-letter>article,#listeRecherche>article{
         width: 100%;
+    }
+    #recetteAleatoire,#recette>article{
+        grid-template-areas: "a a" "e e" "b c" "d d" ;
     }
 }
