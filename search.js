@@ -6,6 +6,7 @@ recherche.addEventListener("click",()=>{
         alert("le champ est vide")
     }
     else{
+        listeRecherche.innerHTML = "";
         fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${champrecherche.value}`)
             .then(response => {
                 if (!response.ok) {
@@ -15,7 +16,25 @@ recherche.addEventListener("click",()=>{
             })
             .then(data => {
                 console.log(data);
-                
+                champrecherche.value=""
+                for(let i=0;i<data.meals.length;i++){
+                    console.log(data.meals[i].strMealThumb)
+                    if(data.meals[i].strMealThumb!=null){
+                        const article=document.createElement('article');
+                        const titre=document.createElement('h2');
+                        const img=document.createElement('img');
+                        const listeRecherche=document.querySelector("#listeRecherche");
+                        titre.textContent=data.meals[i].strMeal;
+                        img.setAttribute("src", data.meals[i].strMealThumb);
+                        article.appendChild(titre);
+                        article.appendChild(img);
+                        article.addEventListener("click", ()=>{
+                            window.location.replace(`./meal.html?i=${data.meals[i].idMeal}`)
+                        })
+                        listeRecherche.appendChild(article);
+                        
+                    }
+                } 
             })
             .catch(error => {
                 console.error('Error:', error);

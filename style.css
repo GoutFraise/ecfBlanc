@@ -7,10 +7,8 @@
 }
 body{
     background-color: rgb(203, 83, 9);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     min-height: 100vh;
+    position: relative;
 }
 .container{
     width: 1440px;
@@ -27,10 +25,29 @@ header{
     gap: 0vh;
     background-color: brown;
     padding: 20px;
+    
 }
 header>i{
     font-size: 30px;
     margin-right: 10px;
+}
+nav{
+    display: flex;
+    background-color: brown;
+    margin-top: 4vh;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+nav>a{
+    width: 20%;
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+}
+nav>a:hover{
+    background-color: rgb(134, 35, 35);
+   
+
 }
 /*main*/
 button{
@@ -49,10 +66,13 @@ h2{
 }
 /*footer*/
 footer{
+    position: absolute;
+    width: 100%;
     display: flex;
     padding: 20px;
     justify-content: space-around;
     background-color: brown;
+    bottom: 0;
 }
 /*categories*/
 #categories{
@@ -60,8 +80,20 @@ footer{
     justify-content: space-around;
     gap: 20px;
     flex-wrap: wrap;
-    background-color: brown;
     padding: 20px;
+    padding-bottom: 10vh;
+}
+#categories>article{
+    background-color: brown;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden; 
+    transform: scale(1.0);
+    transition: all ease 0.5s; 
+}
+#categories>article:hover{
+    transform: scale(1.1);
+    transition: all ease 0.5s;
 }
 /*categorie(ListePlat) */
 #ListePlat{
@@ -95,6 +127,7 @@ footer{
     padding: 20px;
     bottom: 0; 
 } 
+/*first letter*/
 @media (min-width: 1200px) and  (max-width:1480px){
     .container{
         width: 1140px;
