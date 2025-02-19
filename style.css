@@ -304,6 +304,58 @@ footer{
 #recette>article>img{
     grid-area: e ;
 }
+/*index*/
+#platFavori{
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+    padding-bottom: 10vh;
+}
+#platFavori>article{
+    background-color: brown;
+    width: 100%;
+    padding: 2vh;
+    border-radius: 20px;
+    overflow: hidden; 
+    transform: scale(1.0);
+    transition: all ease 0.5s;
+    display: grid;
+    gap:1vh;
+    grid-template-areas: "a a" "d b " "d c" ;
+
+}
+#platFavori>article:hover{
+    background-color: rgb(134, 35, 35);
+    transform: scale(1.1);
+    transition: all ease 0.5s;
+}
+#platFavori>article>h3{
+    font-size: 16px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    grid-area: a ;
+    margin: 0;
+    padding: 0;
+}
+#platFavori>article>#regionFav{
+    grid-area: b ;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+#platFavori>article>#categorieFav{
+    grid-area: c ;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+#platFavori>article>img{
+    grid-area: d ; 
+    width: 100%; 
+}
 
 @media (min-width: 1200px) and  (max-width:1480px){
     .container{
@@ -334,6 +386,12 @@ footer{
     #recetteAleatoire,#recette>article{
         grid-template-areas: "a a a" "e b b" "e c c" "d d d" ;
     }
+    #platFavori{
+        flex-wrap: wrap;
+    }
+    #platFavori>article{
+        width: 48%;
+    }
 }
 @media (min-width: 512px) and  (max-width:767px){
     .container{
@@ -345,6 +403,12 @@ footer{
     #recetteAleatoire,#recette>article{
         grid-template-areas: "a a" "e e" "b c" "d d" ;
     }
+    #platFavori{
+        flex-wrap: wrap;
+    }
+    #platFavori>article{
+        width: 100%;
+    }
 }
 @media (min-width: 0px) and  (max-width:511px){
     .container{
@@ -355,5 +419,11 @@ footer{
     }
     #recetteAleatoire,#recette>article{
         grid-template-areas: "a a" "e e" "b c" "d d" ;
+    }
+    #platFavori{
+        flex-wrap: wrap;
+    }
+    #platFavori>article{
+        width: 100%;
     }
 }

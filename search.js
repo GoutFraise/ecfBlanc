@@ -3,7 +3,7 @@ const champrecherche = document.querySelector('#champrecherche')
 const listeRecherche = document.querySelector('#listeRecherche')
 recherche.addEventListener("click",()=>{
     if(champrecherche.value===""){
-        alert("le champ est vide")
+        alert("Le champ est vide")
     }
     else{
         listeRecherche.innerHTML = "";
