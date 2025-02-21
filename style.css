@@ -420,6 +420,9 @@ footer{
     }
 }
 @media (min-width: 0px) and  (max-width:511px){
+    nav>a{
+        padding: 20px 0;
+    }
     .container{
         width: 100%;
     }
