@@ -6,7 +6,7 @@
     color: blanchedalmond;
 }
 body{
-    background-color: rgb(203, 83, 9);
+    background-color: rgb(230, 133, 72);
     min-height: 100vh;
     position: relative;
 }
@@ -26,7 +26,7 @@ header{
     justify-content: flex-start;
     align-items: center;
     gap: 0vh;
-    background-color: brown;
+    background-color: rgb(102, 23, 23);
     padding: 20px;
 }
 header>i{
@@ -35,7 +35,7 @@ header>i{
 }
 nav{
     display: flex;
-    background-color: brown;
+    background-color: rgb(102, 23, 23);
     margin-top: 4vh;
     justify-content: center;
     flex-wrap: wrap;
@@ -47,7 +47,7 @@ nav>a{
     text-align: center;
 }
 nav>a:hover{
-    background-color: rgb(134, 35, 35);
+    background-color: rgb(79, 17, 17);
 }
 /*main*/
 h2{
@@ -62,7 +62,8 @@ footer{
     display: flex;
     padding: 20px;
     justify-content: space-around;
-    background-color: brown;
+    background-color: rgb(102, 23, 23);
+
     bottom: 0;
 }
 /*categories*/
@@ -76,7 +77,8 @@ footer{
 }
 #categories>article{
     width: 23%;
-    background-color: brown;
+    background-color: rgb(102, 23, 23);
+
     position: relative;
     border-radius: 20px;
     overflow: hidden; 
@@ -84,7 +86,7 @@ footer{
     transition: all ease 0.5s; 
 }
 #categories>article:hover{
-    background-color: rgb(134, 35, 35);
+    background-color: rgb(79, 17, 17);
     transform: scale(1.1);
     transition: all ease 0.5s;
 }
@@ -111,7 +113,7 @@ footer{
     transition: all ease 0.5s;   
 }
 #ListePlat>article:hover{
-    background-color: rgb(134, 35, 35);
+    background-color: rgb(79, 17, 17);
     transform: scale(1.1);
     transition: all ease 0.5s;
 }
@@ -120,7 +122,7 @@ footer{
     font-size: 16px;
     display: inline;
     position: absolute;
-    background-color: brown;
+    background-color: rgb(102, 23, 23);
     color: blanchedalmond;
     width: 100%;
     padding: 20px;
@@ -142,7 +144,7 @@ footer{
     transition: all ease 0.5s;
 }
 #navletter>span:hover{
-    background-color: rgb(134, 35, 35);
+    background-color: rgb(79, 17, 17);
     transform: scale(1.1);
     transition: all ease 0.5s;
 
@@ -165,7 +167,7 @@ footer{
     transition: all ease 0.5s;  
 }
 #first-letter>article:hover{
-    background-color: rgb(134, 35, 35);
+    background-color: rgb(79, 17, 17);
     transform: scale(1.1);
     transition: all ease 0.5s;
 }
@@ -173,7 +175,7 @@ footer{
     font-size: 16px;
     display: inline;
     position: absolute;
-    background-color: brown;
+    background-color: rgb(102, 23, 23);
     color: blanchedalmond;
     width: 100%;
     padding: 20px;
@@ -181,7 +183,7 @@ footer{
 }
 /*search*/
 #larecherche{
-    background-color: brown;
+    background-color: rgb(102, 23, 23);
     display: flex;
     padding: 2vh;
     justify-content: center;
@@ -207,7 +209,7 @@ footer{
     transition: all ease 0.5s;   
 }
 #listeRecherche>article:hover{
-    background-color: rgb(134, 35, 35);
+    background-color: rgb(79, 17, 17);
     transform: scale(1.1);
     transition: all ease 0.5s;
 }
@@ -215,7 +217,7 @@ footer{
     font-size: 16px;
     display: inline;
     position: absolute;
-    background-color: brown;
+    background-color: rgb(102, 23, 23);
     color: blanchedalmond;
     width: 100%;
     padding: 20px;
@@ -227,7 +229,7 @@ footer{
     justify-content: center;
 }
 #PlatAleatoire{
-    background-color: brown;
+    background-color: rgb(102, 23, 23);
     margin: 20px;
     padding: 5px;
 }
@@ -236,7 +238,7 @@ footer{
     padding-bottom: 10vh;
 }
 #recetteAleatoire{
-    background-color: brown;
+    background-color: rgb(102, 23, 23);;
     display: none;
     padding: 4vh;
     gap: 4vh;
@@ -276,7 +278,7 @@ footer{
     
 }
 #recette>article{
-    background-color: brown;
+    background-color: rgb(102, 23, 23);
     display: grid;
     padding: 4vh;
     gap: 4vh;
@@ -319,7 +321,7 @@ footer{
     padding-bottom: 10vh;
 }
 #platFavori>article{
-    background-color: brown;
+    background-color: rgb(102, 23, 23);
     width: 100%;
     padding: 2vh;
     border-radius: 20px;
@@ -332,7 +334,7 @@ footer{
 
 }
 #platFavori>article:hover{
-    background-color: rgb(134, 35, 35);
+    background-color: rgb(79, 17, 17);
     transform: scale(1.1);
     transition: all ease 0.5s;
 }
