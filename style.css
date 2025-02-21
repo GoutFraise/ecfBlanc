@@ -6,7 +6,7 @@
     color: blanchedalmond;
 }
 body{
-    background-color: rgb(230, 133, 72);
+    background-color: rgb(223, 136, 82);
     min-height: 100vh;
     position: relative;
 }
@@ -421,7 +421,7 @@ footer{
 }
 @media (min-width: 0px) and  (max-width:511px){
     nav>a{
-        padding: 20px 0;
+        padding: 20px 4px;
     }
     .container{
         width: 100%;
