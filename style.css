@@ -99,6 +99,7 @@ footer{
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    padding: 20px;
     padding-bottom: 10vh;
 }
 #ListePlat>article{
@@ -147,6 +148,7 @@ footer{
 
 }
 #first-letter{
+    padding: 20px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -188,6 +190,7 @@ footer{
     margin-bottom: 4vh;
 }
 #listeRecherche{
+    padding: 20px;
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
@@ -229,6 +232,7 @@ footer{
     padding: 5px;
 }
 #sectionRandom{
+    padding: 20px;
     padding-bottom: 10vh;
 }
 #recetteAleatoire{
@@ -267,7 +271,9 @@ footer{
 }
 /*meal*/
 #recette{
+    padding: 20px;
     padding-bottom: 10vh;
+    
 }
 #recette>article{
     background-color: brown;
@@ -308,6 +314,7 @@ footer{
 #platFavori{
     justify-content: center;
     display: flex;
+    padding: 20px;
     gap: 20px;
     padding-bottom: 10vh;
 }
