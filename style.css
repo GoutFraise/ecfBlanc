@@ -40,6 +40,7 @@ nav{
     justify-content: center;
     flex-wrap: wrap;
 }
+
 nav>a{
     width: 20%;
     text-decoration: none;
@@ -274,7 +275,7 @@ footer{
 /*meal*/
 #recette{
     padding: 20px;
-    padding-bottom: 10vh;
+    padding:10vh 0 ;
     
 }
 #recette>article{
@@ -418,6 +419,7 @@ footer{
     #platFavori>article{
         width: 100%;
     }
+    
 }
 @media (min-width: 0px) and  (max-width:511px){
     nav>a{
@@ -438,4 +440,17 @@ footer{
     #platFavori>article{
         width: 100%;
     }
+    nav{
+        position: absolute;
+        width: 100%;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    nav>a{
+        width: 30%;
+        padding: 10px;
+      
+    }    
 }
